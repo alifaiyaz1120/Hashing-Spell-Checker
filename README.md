@@ -13,8 +13,18 @@ This programming assignment involves implementing and testing three hashing tech
 ## Part 1: Hashing (create_and_test_hash.cc)
 **Usage:**
 ```bash
-./create_and_test_hash words.txt query_words.txt quadratic
+./create_and_test_hash <words file name> <query words file name> <flag>
 ```
+- <words file name>: Name of the file containing words for building the hash table.
+- <query words file name>: Name of the file containing words for testing the hash table.
+- <flag>: Use "quadratic" for quadratic probing, "linear" for linear probing, and "double" for double hashing.
+
+Example: 
+```bash
+./create_and_test_hash words.txt query_words.txt quadratic
+
+```
+
 Output Format:
 ```bash
 number_of_elements: 500 
@@ -30,8 +40,16 @@ book Found 1
 ## Part 2: Double Hashing (create_and_test_hash.cc)
 **Usage:**
 ```bash
-./create_and_test_hash words.txt query_words.txt double 7
+./create_and_test_hash words.txt query_words.txt double <R VALUE>
 ```
+- <R VALUE>: R-value for double hashing as discussed in class.
+
+### Example:
+```bash
+./create_and_test_hash words.txt query_words.txt double 7
+
+```
+
 Output Format:
 ```bash
 r_value: 7
@@ -45,10 +63,15 @@ book Found 1
 ## Part 3: Spell Checker (spell_check.cc)
 **Usage:**
 ```bash
-./spell_check document1.txt wordsEN.txt
-
+./spell_check <document file> <dictionary file>
 ```
+- <document file>: Name of the document file to be spell-checked.
+- <dictionary file>: Name of the dictionary file containing valid words.
 
+### Example 
+```bash
+./spell_check document1.txt wordsEN.txt
+```
 Output Format:
 ```bash
 complete is CORRECT
@@ -59,6 +82,5 @@ lwa is INCORRECT
 ** lwa -> la ** case B
 ** lwa -> law ** case C
 ...
-
 
 ```
