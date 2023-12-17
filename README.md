@@ -15,9 +15,9 @@ This programming assignment involves implementing and testing three hashing tech
 ```bash
 ./create_and_test_hash <words file name> <query words file name> <flag>
 ```
-- <words file name>: Name of the file containing words for building the hash table.
-- <query words file name>: Name of the file containing words for testing the hash table.
-- <flag>: Use "quadratic" for quadratic probing, "linear" for linear probing, and "double" for double hashing.
+- "words file name": Name of the file containing words for building the hash table.
+- "query words file name": Name of the file containing words for testing the hash table.
+- "flag": Use "quadratic" for quadratic probing, "linear" for linear probing, and "double" for double hashing.
 
 Example: 
 ```bash
@@ -42,7 +42,7 @@ book Found 1
 ```bash
 ./create_and_test_hash words.txt query_words.txt double <R VALUE>
 ```
-- <R VALUE>: R-value for double hashing as discussed in class.
+- "R VALUE": R-value for double hashing as discussed in class.
 
 ### Example:
 ```bash
@@ -65,8 +65,8 @@ book Found 1
 ```bash
 ./spell_check <document file> <dictionary file>
 ```
-- <document file>: Name of the document file to be spell-checked.
-- <dictionary file>: Name of the dictionary file containing valid words.
+- "document file": Name of the document file to be spell-checked.
+- "dictionary file": Name of the dictionary file containing valid words.
 
 ### Example 
 ```bash
