@@ -1,6 +1,8 @@
 # Hashing and Spell Checker 
 
 ## Overview
+By: Ali Faiyaz
+
 This programming assignment involves implementing and testing three hashing techniques (quadratic probing, linear probing, and double hashing) and utilizing the best-performing one for a spell-checker. The assignment includes three main components:
 
 1. `create_and_test_hash.cc`: Program to test hashing implementations.
